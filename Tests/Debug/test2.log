@@ -1,0 +1,10 @@
+﻿  grapgic.cpp
+  message.cpp
+  script.cpp
+C:\Users\makki\Desktop\フィル先生授業\Tests\script.cpp(90,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\makki\Desktop\フィル先生授業\Tests\script.cpp(161,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\makki\Desktop\フィル先生授業\Tests\script.cpp(167,18): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  select.cpp
+  test.cpp
+  コードを生成中...
+  test2.vcxproj -> C:\Users\makki\Desktop\フィル先生授業\Tests\Debug\test2.exe

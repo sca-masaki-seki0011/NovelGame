@@ -1,0 +1,59 @@
+	@@load 1 ./pic/school.png
+	@@load 2 ./pic/man.png
+
+	@@addgraph 1 1 0 0
+	@@addgraph 2 2 50 100
+	@@wait
+        @@message (私の名前は森子、今日は大好きなりょうた君に告白するんだ。)
+        @@message (神様お願い、どうか私の一生のお願いを叶えて!!)
+        @@message (あ、りょうたくんが来てくれたみたい。)
+	@@message こんにちは、りょうた君。
+	@@message 突然こんなところに呼び出してごめんね。
+
+	@@message 実は私...あなたのことが好きなの!!!
+
+	@@message ダメ...かな?
+
+	@@select マジで!!、俺も好きだっだよ。@@UNDER ごめん、俺秀子のことが好きなんだ。@@UPPER
+
+@@label UNDER
+	@@message 本当!嬉しい!!
+	@@goto NEXT
+
+@@label UPPER
+	@@message そっか、秀子か...
+        @@goto NEXT2
+
+@@label NEXT
+
+	@@message じゃあ、一緒に帰ってくれる?
+
+	@@select いいよ@@YES ごめん、やっぱ俺秀子が好きだわ@@NO
+
+@@label NO
+        @@message ....そっか......
+	@@goto NEXT2
+
+@@label YES
+
+	@@message やった!!!私今、とっても幸せ
+	@@goto NEXT3
+
+@@label NEXT2
+        @@message ごめんね、突然こんなこと言ってさようなら。
+        @@message (秀子め......殺す!!!!!)
+        @@removegraph 2
+	@@wait
+	@@message そうして、彼女は真っ赤な夕日に向かって姿を消した。
+        @@goto NEXT4
+
+@@label NEXT3
+        @@message 私ね、りょうた君といっぱいやりたいことがあるんだ。
+	@@message 遊園地行ったり、一緒に水族館行ったり、それと....
+	@@removegraph 2
+	@@wait
+	@@message そうして俺は、彼女と一緒に手を繋いで綺麗な夕日を背に下校したのであった。
+        @@goto NEXT4
+
+@@label NEXT4
+        @@message Fin...
